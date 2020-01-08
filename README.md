@@ -2,10 +2,11 @@
 
 Install Raspian (here, we use the official Raspbian Buster), not covered in this how-to.
 
-Update Raspbian
+Update Raspbian and install a missing package in the installer that pop error messages in domoticz logs
 ```bash
 root# apt update
 root# apt upgrade -y
+root# apt install python3-dev -y
 ```
 
 Switch some directory in tmpfs
