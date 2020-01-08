@@ -1,6 +1,6 @@
-# domoticz
+# Domoticz
 
-Install Raspian (here, we use the official Raspbian Buster)
+Install Raspian (here, we use the official Raspbian Buster), not covered in this how-to.
 
 Update Raspbian
 ```bash
@@ -42,6 +42,7 @@ domoticz$ curl -sSL install.domoticz.com | sudo bash
 
 Go back under root, then replace the cheap init script with a wonderful systemd one
 ```bash
+root# rm -f /etc/init.d/domoticz.sh
 root# cat >/etc/systemd/system/domoticz.service <<EOF
 [Unit]
   Description=domoticz
