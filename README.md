@@ -9,7 +9,7 @@ root# apt upgrade -y
 root# apt install python3-dev -y
 ```
 
-Switch some directory in tmpfs
+Switch some directory as tmpfs
 ```bash
 root# cat >>/etc/fstab <<EOF
 tmpfs    /tmp        tmpfs    defaults,noatime,nosuid,size=32m    0 0
