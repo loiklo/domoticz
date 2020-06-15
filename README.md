@@ -15,6 +15,7 @@ root# cat >>/etc/fstab <<EOF
 tmpfs    /tmp        tmpfs    defaults,noatime,nosuid,size=32m    0 0
 tmpfs    /var/tmp    tmpfs    defaults,noatime,nosuid,size=32m    0 0
 tmpfs    /var/log    tmpfs    defaults,noatime,nosuid,mode=0755,size=32m    0 0
+EOF
 ```
 
 Add a user "domoticz", allow the user to connect to the Zwave.me dongle and create a password
